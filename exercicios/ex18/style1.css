@@ -1,0 +1,10 @@
+@font-face {
+    font-family:'Blue Winter';
+    src: url(fontes/Blue\ Winter.otf)format('opentype'),url(fontes/Blue\ Winter.ttf)format('trutype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1 {
+    font-family:'Blue Winter', Arial, Helvetica, sans-serif;
+}

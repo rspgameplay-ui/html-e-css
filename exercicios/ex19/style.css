@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+body {
+    background-color: antiquewhite;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1 {
+    color: rgb(126, 20, 20);
+    background-color: rgba(165, 42, 42, 0.252);
+    width: 300px;
+    padding: 10px;
+    border-radius: 20px;
+    
+}
+h2 {
+    color: rgb(167, 67, 67);
+}
+h1#tituloprincipal {
+    color: aliceblue;
+    background-color: brown;
+    width: 800px;
+    border-radius: 20px;
+    box-shadow: 7px 7px 20px rgba(165, 42, 42, 0.337) ;
+    text-align: center;
+    margin: auto;
+    font-size: 3em;
+}

@@ -1,0 +1,223 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'Adroid';
+    src: url('/fontes/idroid.otf') format(opentype);
+}
+.bebas-neue-regular {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+:root {
+    --cor01: #58DB76;
+    --cor02: #64B176;
+    --cor03: #253329;
+    --cor04: #ffffff;
+    --cor05: #f5f5dc; 
+
+    --font01: 'Adroid';
+    --font02: "Bebas Neue", sans-serif;
+    --font03: "Arial", "Verdana"; 
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    transition: all 0.3s ease-out;
+}
+
+body {
+    background-color: var(--cor05);
+}
+
+header {
+    background-image: linear-gradient(to bottom, var(--cor01), var(--cor02));
+    min-height: 150px;
+    padding-top: 40px;
+}
+
+header > h1 {
+    color: var(--cor04);
+    font-family: var(--font02);
+    text-align: center;
+    padding-bottom: 15px;
+    font-size: 4em;
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.422);
+}
+
+header > p {
+    color: var(--cor04);
+    font-family: var(--font03);
+    text-align: center;
+    font-size: 1em;
+    max-width: 500px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 25px;
+    margin: auto;
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.422);
+
+}
+
+nav {
+    background-color: #64B176;
+    padding: 10px;
+    padding-top: 20px;
+}
+
+nav > a {
+    text-decoration: none;
+    color: var(--cor04);
+    font-family: var(--font03);
+    font-size: 0.9em;
+    margin-right: 25px;
+    font-weight: bold;
+    
+}
+
+nav > a:hover {
+    background-color: var(--cor01);
+    color: var(--cor02);
+    padding: 6px;
+    border-radius: 2px;
+}
+
+main {
+    min-width: 300px;
+    max-width: 1000px;
+    background-color: var(--cor04);
+    margin: auto;
+    margin-bottom: 30px;
+    padding: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.455);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+main article> h1 {
+    font-family: var(--font01);
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.189);
+}
+
+main article > h2 {
+    font-family: var(--font01);
+    font-size: 1.3em;
+    background-image: linear-gradient(to right, var(--cor05), transparent);
+    text-indent: 8px;
+}
+
+main article > p {
+    font-family: var(--font03);
+    font-size: 0.9em;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    line-height: 2em;
+    text-align: justify;
+    text-indent: 30px;
+}
+
+main img.imagens {
+    margin:auto;
+    display: block;
+    max-width: 700px;
+    min-width: 290px;
+}
+
+main img#bugdroidimg {
+    max-width: 350px;
+}
+
+main h2.cordetexto {
+    color: var(--cor02);
+}
+
+main h1.cordetexto {
+    color: var(--cor02);
+}
+
+main strong {
+    color: var(--cor01);
+    font-weight: bold;
+    padding: 2px 6px;
+    text-transform: uppercase;
+}
+
+main a {
+    text-decoration: none;
+    color: var(--cor04);
+    font-weight: bold;
+    background-color: var(--cor01);
+    padding: 1px 5px;
+    text-transform: uppercase;
+}
+
+main a:hover {
+    font-size: 1.1em;
+    background-color: var(--cor01);
+    text-decoration: underline;
+}
+
+main aside {
+    background-color: var(--cor05);
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.422);
+
+}
+
+main h3 {
+    background-color: var(--cor02);
+    color: var(--cor04);
+    padding: 10px;
+    font-family: var(--font03);
+    border-radius: 10px 10px 0px 0px;
+}
+
+main ul {
+    columns: 2;
+    list-style-position: inside;
+    padding: 20px;
+    list-style-type: '\2714\00A0\00A0';
+}
+
+a.externo::after {
+    content: '\00A0\00A0\1F517';
+}
+
+main aside > p {
+    font-family: var(--font03);
+    font-size: 0.9em;
+    line-height: 1.4em;
+    padding: 10px;
+}
+
+main div#video {
+    background-color: var(--cor03);
+    margin: 0px -10px;
+    padding: 20px;
+    padding-bottom: 50.9%;
+    position: relative;
+    margin-bottom: 30px ;
+    
+
+}
+
+main div#video > iframe {
+    position: absolute;
+    top: 20px;      /* Empurra o vídeo para baixo (mesmo valor do padding do pai) */
+    left: 20px;     /* Empurra o vídeo para direita (mesmo valor do padding do pai) */
+    width: calc(100% - 40px);  /* 100% menos 40px (20px da esquerda + 20px da direita) */
+    height: calc(100% - 40px); /* 100% menos 40px (20px de cima + 20px de baixo) */
+}
+    
+
+
+footer {
+    background-color: var(--cor03);
+    color: var(--cor04);
+    font-family: var(--font02);
+    text-align: center;
+    font-size: 1.3em;
+    padding: 10px;
+}
