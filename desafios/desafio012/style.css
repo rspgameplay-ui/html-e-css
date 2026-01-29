@@ -3,7 +3,8 @@
 
 * {
     text-decoration: none;
-
+    margin: 0;
+    padding: 0;
 }
 
 :root {
@@ -13,4 +14,69 @@
     --fonte01:"Montserrat", sans-serif;
     --fonte02:"Shadows Into Light Two";
     
+}
+
+body {
+    background-color: lightgray;
+}
+
+
+header {
+    background-color: var(--cor01);
+    text-align: center;
+}
+
+header h1 {
+    padding-top: 50px;
+    color: var(--cor02);
+    font-family: var(--fonte01);
+    font-variant: small-caps;
+
+}
+
+header p {
+    color: var(--cor02);
+    padding-bottom: 50px;
+    font-family: var(--fonte01);
+}
+
+header p a {
+    color: var(--cor02);
+    font-weight: bolder;
+}
+
+header a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 40px;
+}
+
+section.normal {
+    background-color: var(--cor02);
+}
+
+section.imagem {
+    color: var(--cor02);
+}
+
+section.imagem > p {
+    background-color: rgba(0, 0, 0, 0.411);
+    width: 200px;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: var(--cor01);
+    color: var(--cor02);
+    padding: 10px;
+}
+
+footer p {
+    text-align: center
 }
