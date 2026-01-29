@@ -9,12 +9,20 @@
     
         #container {
             background-color: purple;
-            height: 300px;
+            position: relative;
+            height: 500px;
+            padding: 10px;
         }
 
         #content {
             background-color: yellow;
             height: 150px;
+            width: 300px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+
+            transform: translate(-50%, -50%);
         }
 
     </style>
@@ -23,11 +31,13 @@
 <body>
     <section id="container">
 
+         <article id="content">
+
+        </article>
+
     </section>
     
-    <article id="content">
-
-    </article>
+   
 
 </body>
 </html>
