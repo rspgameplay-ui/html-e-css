@@ -50,6 +50,9 @@ header a:hover {
 }
 
 section {
+    font-family: var(--fonte02);
+    font-weight: 900;
+    font-size: 2em;
     padding-top: 10vh;
     padding-bottom: 10vh;
     line-height: 2em;
@@ -60,13 +63,17 @@ section.normal {
     background-color: var(--cor02);
 }
 
+section.normal > p {
+    padding-bottom: 3em;
+}
+
 section.imagem {
     color: var(--cor02);
 }
 
 section.imagem > p {
-    background-color: rgba(0, 0, 0, 0.411);
-    width: 200px;
+    background-color: rgba(0, 0, 0, 0.236);
+    max-width: 350px;
     padding: 20px;
     border-radius: 5px;
 }
@@ -75,8 +82,14 @@ footer {
     background-color: var(--cor01);
     color: var(--cor02);
     padding: 10px;
+    font-family: var(--fonte01);
 }
 
 footer p {
     text-align: center
+}
+
+footer p a {
+    color: var(--cor02);
+    font-weight: bolder;
 }
