@@ -61,6 +61,7 @@ section {
 
 section.normal {
     background-color: var(--cor02);
+    
 }
 
 section.normal > p {
