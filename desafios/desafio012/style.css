@@ -31,6 +31,7 @@ header h1 {
     color: var(--cor02);
     font-family: var(--fonte01);
     font-variant: small-caps;
+    font-size: 8vw;
 
 }
 
@@ -38,6 +39,7 @@ header p {
     color: var(--cor02);
     padding-bottom: 50px;
     font-family: var(--fonte01);
+    font-weight: 100;
 }
 
 header p a {
@@ -52,11 +54,12 @@ header a:hover {
 section {
     font-family: var(--fonte02);
     font-weight: 900;
-    font-size: 2em;
+    font-size: 3vw;
     padding-top: 10vh;
     padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 40px;
+    
 }
 
 section.normal {
@@ -66,15 +69,30 @@ section.normal {
 
 section.normal > p {
     padding-bottom: 3em;
+    
 }
 
 section.imagem {
     color: var(--cor02);
+    text-shadow: 1px 1px 1px black;
+    box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.468);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+section#img01 {
+    background-image: url('./imagens/background001.jpg');
+    background-position: right center;
+}
+
+section#img02 {
+    background-image: url('./imagens/background002.jpg');
+    background-position: right center;
 }
 
 section.imagem > p {
-    background-color: rgba(0, 0, 0, 0.236);
-    max-width: 350px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.636), transparent);
+    display: inline-block;
     padding: 20px;
     border-radius: 5px;
 }
@@ -87,10 +105,16 @@ footer {
 }
 
 footer p {
-    text-align: center
+    text-align: center;
+    font-weight: 100;
+    
 }
 
 footer p a {
     color: var(--cor02);
     font-weight: bolder;
+}
+
+footer p a:hover {
+    text-decoration: underline;
 }
