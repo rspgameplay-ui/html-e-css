@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        table {
+            font-family: Arial, Helvetica, sans-serif;
+            border-collapse: collapse;
+            width: 500px;
+            margin: auto;
+
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        thead.head-table {
+            background-color: gray;
+            color: white;
+        }
+
+        tbody  tr:nth-child(2n) {
+            background-color: lightgray;
+        }
+
+        td.number {
+            text-align: right;
+        }
+
+        tfoot.foot-table {
+            background-color: gray;
+            color: white;
+        } 
+
+        tfoot {
+            text-align: center;
+        }
+
+        body caption {
+            background-color: lightgray;
+            padding: 10px;
+            font-size: 1.3em;
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <table>
+
+        <caption>Nordeste</caption>
+
+        <thead class="head-table">
+            <th scope="col">Estado</th>
+            <th scope="col">População</th>
+        </thead>
+
+        <tbody>
+
+            <tr>
+                <td>
+                    Maranhão
+                </td>
+                <td class="number">
+                   7.018.211  
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Piauí
+                </td>
+                <td class="number">
+                    3.271.199
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Pará
+                </td>
+                <td class="number">
+                    8.664.306
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Ceará
+                </td>
+                <td class="number">
+                    9.268.836
+                </td>
+            </tr>
+        
+        </tbody>
+
+        <tfoot class="foot-table">
+            <th scope="row">
+                Total de Pessoas
+            </th>
+            <td>
+                <strong>28.244.102</strong>
+            </td>
+        </tfoot>
+    </table>
+
+</body>
+</html>
